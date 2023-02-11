@@ -1,0 +1,74 @@
+@use "../abstracts" as *;
+.max-width {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (max-width: 1100px) {
+    width: 100%;
+    padding: 0 2rem;
+  }
+}
+
+.inputCustom {
+  width: 30rem;
+  font-size: 1.6rem;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom: 1px solid #dcff1a;
+  background-color: transparent;
+  color: $WHITE_DEFAULT;
+  outline: none;
+  padding-bottom: 5px;
+  transition: all 0.2s;
+}
+
+.error-input {
+  border-bottom: 1px solid #f82222;
+}
+
+.error-text {
+  font-size: 1.4rem;
+  color: #f82222;
+}
+
+.my-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  padding: 2rem 2rem;
+  font-size: 1.6rem;
+  border: solid 5px;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, 0.2);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  color: #dcff1a;
+  transition: all 0.3s;
+  border: solid 5px #dcff1a;
+  &:hover {
+    transform: translateY(-2px);
+  }
+  &:active {
+    transform: translateY(0px);
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 1.4rem;
+    padding: 1rem 1rem;
+  }
+}
+
+.text-connect {
+  font-size: 2rem;
+  color: #f82222;
+  margin-bottom: 10rem;
+}
+
+.loadingModalText {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
